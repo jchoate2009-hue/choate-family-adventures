@@ -1,0 +1,67 @@
+# Choate Family Adventures
+
+Fresh Firebase build for the Choate Family Adventures platform.
+
+Current adventure: **Smoky Mountain Adventure 2026**
+
+## What this version includes
+
+- Clean Next.js app foundation
+- Mobile-first family app design
+- Firebase / Firestore movie mission submissions
+- No Netlify Forms dependency
+- Countdown
+- Current mission
+- Theater placeholder
+- Crew
+- Locked activities
+- Trip info
+- PWA manifest
+
+## Setup
+
+1. Create a Firebase project.
+2. Create a Firestore database.
+3. Register a web app in Firebase.
+4. Copy your Firebase config values.
+5. Add the values to Netlify environment variables using the names in `.env.example`.
+6. Deploy on Netlify.
+
+## Netlify build settings
+
+Build command:
+
+```bash
+npm run build
+```
+
+Publish directory:
+
+```bash
+.next
+```
+
+## Environment variables
+
+Add these in Netlify:
+
+```bash
+NEXT_PUBLIC_FIREBASE_API_KEY
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+NEXT_PUBLIC_FIREBASE_PROJECT_ID
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+NEXT_PUBLIC_FIREBASE_APP_ID
+```
+
+## Firestore collection
+
+Movie Mission responses save to:
+
+```text
+movieMissionSubmissions
+```
+
+## Important
+
+The Firebase config values used by client-side apps are public identifiers. Access protection comes from Firestore security rules, not from hiding the config.
