@@ -36,7 +36,34 @@ export const adventure = {
       detail: "Must-have activity",
     },
   ],
-  crew: [
+  timeline: [
+  {
+    emoji: "🚗",
+    title: "Travel Day",
+    detail: "July 4 — Drive to Sevierville, Publix stop, cabin check-in",
+  },
+  {
+    emoji: "⚽",
+    title: "Mexico World Cup Watch Party",
+    detail: "July 5 — 8:00 PM EDT in the cabin theater",
+  },
+  {
+    emoji: "🎢",
+    title: "Dollywood",
+    detail: "Full family park day",
+  },
+  {
+    emoji: "🦌",
+    title: "Smoky Mountain Deer Farm",
+    detail: "Must-have animal experience",
+  },
+  {
+    emoji: "🏔️",
+    title: "Great Smoky Mountains National Park",
+    detail: "Locked-in mountain day",
+  },
+],
+    crew: [
     "Jeff",
     "Patty",
     "Monica",

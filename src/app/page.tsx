@@ -1,5 +1,6 @@
 import { BottomNav } from "@/components/BottomNav";
 import { EventList } from "@/components/EventList";
+import { Timeline } from "@/components/Timeline";
 import { Hero } from "@/components/Hero";
 import { MissionCard } from "@/components/MissionCard";
 import { MissionControl } from "@/components/MissionControl";
@@ -13,6 +14,7 @@ export default function Home() {
         <MissionCard />
         <MissionControl />
         <EventList />
+        <Timeline />
       <QuickActions />
       </section>
 
