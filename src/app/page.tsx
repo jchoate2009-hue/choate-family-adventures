@@ -1,3 +1,4 @@
+import { BottomNav } from "@/components/BottomNav";
 import { EventList } from "@/components/EventList";
 import { Hero } from "@/components/Hero";
 import { MissionCard } from "@/components/MissionCard";
@@ -12,8 +13,10 @@ export default function Home() {
         <MissionCard />
         <MissionControl />
         <EventList />
-        <QuickActions />
+      <QuickActions />
       </section>
+
+      <BottomNav />
     </main>
   );
 }
