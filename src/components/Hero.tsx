@@ -1,4 +1,5 @@
 import { adventure } from "@/data/adventure";
+import { Countdown } from "./Countdown";
 
 export function Hero() {
   return (
@@ -15,9 +16,7 @@ export function Hero() {
         {adventure.year} • {adventure.location}
       </p>
 
-      <div className="mt-6 rounded-full bg-white/10 px-4 py-3 text-sm font-bold">
-        Adventure planning is underway 🏔️
-      </div>
+      <Countdown targetDate={adventure.dates.start} />
     </div>
   );
 }
